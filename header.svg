@@ -1,7 +1,19 @@
-<svg fill="none" width="1000" height="200" xmlns="http://www.w3.org/2000/svg">
-    <foreignObject width="1000" height="200">
+<svg fill="none" width="1000" height="300" xmlns="http://www.w3.org/2000/svg">
+    <foreignObject width="1000" height="300">
         <div xmlns="http://www.w3.org/1999/xhtml">
             <style>
+                @keyframes rotateBillboard {
+                    0% {
+                        transform: perspective(1200px) rotateX(90deg);
+                    }
+                    50% {
+                        transform: perspective(1200px) rotateX(0deg);
+                    }
+                    100% {
+                        transform: perspective(1200px) rotateX(-90deg);
+                    }
+                }
+
                 @keyframes gradientBackground {
                     0% {
                         background-position: 0% 50%;
@@ -13,73 +25,27 @@
                         background-position: 0% 50%;
                     }
                 }
-            
-                .container {
-                    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    margin: 0;
-                    width: 100%;
-                    height: 200px;
+
+                .billboard {
                     background: linear-gradient(-45deg, #fc5c7d, #6a82fb, #05dfd7);
                     background-size: 600% 400%;
-                    animation: gradientBackground 10s ease infinite;
-                    border-radius: 10px;
-                    color: white;
-                    text-align: center;
-                }
-        
-                .wrapper {
-                    height: 200px;
+                    animation: rotateBillboard 10s infinite, gradientBackground 10s ease infinite;
+                    color: #fff;
+                    width: 80%;
+                    height: 150px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                } 
-                
-                .typing-demo {
-                    white-space: nowrap;
-                    overflow: hidden;
-                    border-right: 3px solid;
-                    font-family: monospace;
                     font-size: 2em;
-                }
-
-                @keyframes typing {
-                    from { width: 0; }
-                }
-            
-                @keyframes blink {
-                    50% { border-color: transparent; }
-                }
-
-                .typing-demo span {
-                    display: inline-block;
-                    animation: typing 4s steps(37) forwards, blink .3s step-end infinite alternate;
-                }
-
-                .typing-demo span:nth-child(odd) {
-                    color: red;
-                }
-                
-                .typing-demo span:nth-child(even) {
-                    color: blue;
+                    border: 0px solid #555;
+                    border-radius: 0px;
+                    margin: 50px auto;
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+                    transform-origin: bottom;
                 }
             </style>
-            <div class="container">
-                <div class="wrapper">
-                    <div class="typing-demo">
-                        <span>H</span><span>e</span><span>l</span><span>l</span><span>o</span> 
-                        <span>t</span><span>h</span><span>e</span><span>r</span><span>e</span>.
-                        <span> </span>
-                        <span>I</span><span>'</span><span>m</span>
-                        <span> </span>
-                        <span>L</span><span>i</span><span>v</span><span>i</span><span>a</span>
-                        <span> </span>
-                        <span>M</span><span>a</span><span>r</span><span>t</span><span>i</span><span>n</span><span>s</span><span>:</span><span>)</span>
-                    </div>          
-                </div>
+            <div class="billboard">
+                Hi I am Igor
             </div>
         </div>
     </foreignObject>
