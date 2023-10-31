@@ -31,7 +31,7 @@
                     background-size: 600% 400%;
                     animation: rotateBillboard 10s infinite, gradientBackground 10s ease infinite;
                     color: #fff;
-                    width: 80%;
+                    width: 100%;
                     height: 150px;
                     display: flex;
                     align-items: center;
