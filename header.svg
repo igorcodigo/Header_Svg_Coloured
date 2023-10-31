@@ -29,7 +29,7 @@
                 .billboard {
                     background: linear-gradient(-45deg, #00ee6e, #091970, #00ee6e);
                     background-size: 600% 400%;
-                    animation: rotateBillboard 10s infinite, gradientBackground 10s ease infinite;
+                    animation: rotateBillboard 10s infinite, gradientBackground 8s ease infinite;
                     color: #fff;
                     width: 100%;
                     height: 200px;
@@ -45,7 +45,7 @@
                 }
             </style>
             <div class="billboard">
-                Hi I am Igor
+                Hi there, I'm igorcodigo
             </div>
         </div>
     </foreignObject>
