@@ -1,5 +1,5 @@
-<svg fill="none" width="1000" height="300" xmlns="http://www.w3.org/2000/svg">
-    <foreignObject width="1000" height="300">
+<svg fill="none" width="1000" height="200" xmlns="http://www.w3.org/2000/svg">
+    <foreignObject width="1000" height="200">
         <div xmlns="http://www.w3.org/1999/xhtml">
             <style>
                 @keyframes rotateBillboard {
