@@ -27,7 +27,7 @@
                 }
 
                 .billboard {
-                    background: linear-gradient(-45deg, #fc5c7d, #6a82fb, #05dfd7);
+                    background: linear-gradient(-45deg, #faaa7d, #6a82fb, #05daa7);
                     background-size: 600% 400%;
                     animation: rotateBillboard 10s infinite, gradientBackground 10s ease infinite;
                     color: #fff;
